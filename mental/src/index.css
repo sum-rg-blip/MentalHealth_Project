@@ -1,0 +1,415 @@
+@import "tailwindcss";
+
+/* Flip card styles */
+.perspective {
+  perspective: 1200px;
+}
+.transform-style {
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Optional: Slow pulse animation for background blobs */
+@keyframes pulseSlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+}
+.animate-pulse-slow {
+  animation: pulseSlow 6s ease-in-out infinite;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.group-hover\:rotate-y-180:hover {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+.perspective {
+  perspective: 1200px;
+}
+.transform-style {
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+}
+@keyframes bounceSlower {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(15px); }
+}
+@keyframes pulseSlow {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.1); opacity: 0.5; }
+}
+@keyframes pulseSlower {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.05); opacity: 0.4; }
+}
+.animate-bounce-slow { animation: bounceSlow 10s ease-in-out infinite; }
+.animate-bounce-slower { animation: bounceSlower 14s ease-in-out infinite; }
+.animate-pulse-slow { animation: pulseSlow 8s ease-in-out infinite; }
+.animate-pulse-slower { animation: pulseSlower 12s ease-in-out infinite; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animations.css */
+.perspective {
+  perspective: 1000px;
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+}
+/* ...add the rest here */
+
+
+
+
+
+
+
+
+
+
+
+/* Flip card 3D */
+.perspective {
+  perspective: 1000px;
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Animations */
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+@keyframes bounceSlower {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+@keyframes pulseSlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+@keyframes pulseSlower {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.4;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes popIn {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation classes */
+.animate-bounce-slow {
+  animation: bounceSlow 10s ease-in-out infinite;
+}
+.animate-bounce-slower {
+  animation: bounceSlower 14s ease-in-out infinite;
+}
+.animate-pulse-slow {
+  animation: pulseSlow 8s ease-in-out infinite;
+}
+.animate-pulse-slower {
+  animation: pulseSlower 12s ease-in-out infinite;
+}
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out both;
+}
+.animate-fade-in-section {
+  animation: fadeInSection 1.5s ease-out both;
+}
+.animate-pop-in {
+  animation: popIn 0.6s ease-out both;
+}
+.animate-slide-up {
+  animation: slideUp 0.7s ease-out both;
+}
+
+/* Hover glow & shadow pulse */
+.shadow-md:hover {
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Custom pointer cursor */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+
+
+
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(15px); }
+}
+@keyframes bounceSlower {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+@keyframes pulseSlower {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 8s ease-in-out infinite;
+}
+.animate-bounce-slower {
+  animation: bounceSlower 12s ease-in-out infinite;
+}
+.animate-pulse-slower {
+  animation: pulseSlower 10s ease-in-out infinite;
+}
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+
+
+
+
+
+
+.perspective {
+  perspective: 1200px;
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(15px); }
+}
+@keyframes bounceSlower {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+@keyframes pulseSlower {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInSlow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulseSlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 8s ease-in-out infinite;
+}
+.animate-bounce-slower {
+  animation: bounceSlower 12s ease-in-out infinite;
+}
+.animate-pulse-slow {
+  animation: pulseSlow 4s ease-in-out infinite;
+}
+.animate-pulse-slower {
+  animation: pulseSlower 10s ease-in-out infinite;
+}
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+.animate-fade-in-slow {
+  animation: fadeInSlow 2s ease forwards;
+}
+.animate-float-up-down {
+  animation: floatUpDown 6s ease-in-out infinite;
+}
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+
+
+
+
